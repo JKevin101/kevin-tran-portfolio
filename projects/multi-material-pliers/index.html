@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Kevin Tran | Multi-Material Pliers</title>
+
+      <!--=============== REMIXICONS ===============-->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css" />
+
+      <!--=============== CSS ===============-->
+      <link rel="stylesheet" href="../../assets/css/styles.css" />
+   </head>
+   <body>
+      <!--==================== HEADER ====================-->
+      <header class="header" id="header">
+         <nav class="nav container">
+            <a href="../../index.html#work" class="nav__logo">
+               <i class="ri-arrow-left-line" style="margin-right: 0.5rem;"></i>Back
+            </a>
+         </nav>
+      </header>
+
+      <!--==================== MAIN ====================-->
+      <main class="main">
+         <!--==================== PROJECT ====================-->
+         <section class="section work">
+            <div class="container grid">
+               
+               <!--==================== INTRO ====================-->
+               <article class="work__card">
+                  <div class="work__link home__data" style="padding-bottom: 2rem;">
+                     <h1 class="section__title">Multi-Material Pliers</h1>
+                     
+                         <!--==================== OVERVIEW ====================-->
+                        <h2 class="work__title" style="margin-top: 1.5rem;">Overview</h2>
+                        <p class="work__description">
+                           This project focuses on creating functional, multi-material pliers 
+                           using 3D printing techniques. The pliers are designed to grip and 
+                           manipulate through-hole resistors, utilizing print-in-place 
+                           manufacturing and elastomeric materials to achieve a flexible, 
+                           spring-return mechanism.
+                        </p>
+                        
+                        <p class="work__description">
+                           Print-in-place models are innovative designs that function immediately 
+                           after being printed without the need for additional assembly. These 
+                           designs often rely on careful clearances between moving parts and 
+                           precise print orientations. While single-material extrusion is common, 
+                           incorporating flexible components can greatly enhance functionality.
+                        </p>
+                        <div style="display: flex; flex-direction: column; align-items: center; gap: 1rem; margin-top: 1rem;">
+                           <a href="https://all3dp.com/3d-printed-flexible-pliers/" target="_blank" class="button">
+                           🛠 Design Inspiration
+                           </a>
+                        </div>
+
+                     <img src="img\Background.jpg" alt="Teaser" style="margin-top: 2rem;" class="work__img" />
+                  </div>
+               </article>
+
+               <!--==================== VIDEO ====================-->
+               <article class="work__card">
+                  <div class="work__link home__data" style="padding-bottom: 2rem;">
+                     <h2 class="work__title">Video Demonstration</h2>
+                     <iframe width="100%" height="400" src="https://www.youtube.com/embed/TnOaZ841OHA" frameborder="0" allowfullscreen class="work__img"></iframe>
+                  </div>
+               </article>
+
+               <!--==================== REAL-WORLD APPLICATIONS ====================-->
+               <article class="work__card">
+                  <div class="work__link home__data" style="padding-bottom: .75rem;">
+                     <h2 class="work__title">Real-World Applications of Print-in-Place</h2>
+
+                     <p class="work__description">
+                        Print-in-place techniques have been widely adopted by hobbyists, engineers, 
+                        and companies to create functional moving parts directly from the print bed.
+                     </p>
+
+                     <h3 class="work__title" style="margin-top: 2rem;">Example Applications</h3>
+                     
+                     <ul class="work__description">
+                        <li>
+                           <b>Squeegee</b> - Hobbyists have used this technique to create window wipers 
+                              where the handle is made of PLA or ABS for strength, while the wiper blade itself is printed using TPU for flexibility.  
+                           <div style="display: flex; flex-direction: column; align-items: center; gap: 1rem; margin-top: 1rem;">
+                              <a href="https://www.yeggi.com/q/tpu+squeegee/" target="_blank" class="button">
+                              🧽 Squeegee on Yeggi
+                              </a>
+                           </div>
+                        </li>
+                        
+                        <li style="margin-top: 3rem;">
+                           <b>Hinged Tools and Clamps</b> - Many designers create print-in-place clamps 
+                           with built-in hinges for snap-fit clips or hand-tightened vices, often using 
+                           PETG or PLA for rigidity and TPU for gripping surfaces.  
+                           <div style="display: flex; flex-direction: column; align-items: center; gap: 1rem; margin-top: 1rem;">
+                              <a href="https://www.printables.com/model/974751-clamp-print-in-place" target="_blank" class="button">
+                              🛠 Clamp on Printables
+                              </a>
+                           </div>
+                        </li>
+
+                        <li style="margin-top: 3rem;">
+                           <b>Spring Loaded Box</b> - Many designers incorporate this print-in-place 
+                           technique making a 3D-printable, spring-loaded storage box designed in 
+                           Fusion 360, featuring built-in flexing mechanisms that eliminate the need 
+                           for assembly.  
+                           <div style="display: flex; flex-direction: column; align-items: center; gap: 1rem; margin-top: 1rem;">
+                              <a href="https://www.instructables.com/Print-in-Place-Spring-Loaded-Box/" target="_blank" class="button">
+                              📦 Box on Instructables
+                              </a>
+                           </div>
+                        </li>
+                     </ul>
+                  </div>
+               </article>
+
+               <!--==================== DESIGN AND ITERATIVE PROCESS ====================-->
+               <article class="work__card">
+                  <div class="work__link home__data">
+                     <h2 class="work__title">Design and Iterative Process</h2>
+
+                     <p class="work__description">
+                        The print-in-place pliers were designed with a nine-part assembly to accommodate the capabilities of the available 3D printers.
+                     </p>
+
+                     <h3 class="work__title" style="margin-top: 3rem;">Components</h3>
+                     <ul class="work__description">
+                        <li><b>Four rigid parts:</b> Two handles and two tips (PLA)</li>
+                        <li><b>Two rubber tips:</b> Provides grip for handling resistors (TPU)</li>
+                        <li><b>Two handle grips:</b> Improves comfort (TPU)</li>
+                        <li><b>One flexible inner piece:</b> Acts as a spring mechanism (TPU)</li>
+                     </ul>
+
+                     <h3 class="work__title" style="margin-top: 3rem;">Design Iteration & Prototyping</h3>
+                     <p class="work__description">
+                        Refining the pliers required multiple test prints to achieve the best balance of fit, strength, and flexibility. Below is the progression of three key iterations:
+                     </p>
+
+                      <!--==================== GALLERY ====================-->
+                     <div class="simple-gallery" style="text-align: center;">
+                        <img id="gallery-image" src="img/Initial_Prototype.jpg" alt="Initial Prototype" class="gallery-img" />
+                        <p id="gallery-caption" class="gallery-caption">
+                           <strong>Initial Prototype</strong> — early tolerance testing
+                        </p>
+
+                        <div class="gallery-controls" style="margin-top: 1rem;">
+                           <button onclick="prevImage()" class="button">← Prev</button>
+                           <button onclick="nextImage()" class="button" style="margin-left: 1rem;">Next →</button>
+                        </div>
+                     </div>
+                  </div>
+               </article>
+
+               <!--==================== SPECIFICATIONS ====================-->
+               <article class="work__card">
+                  <div class="work__link home__data">
+                     <h2 class="work__title">Specifications</h2>
+
+                     <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 2rem; margin-top: 1.5rem;">
+                        <!-- Specs Table -->
+                        <table style="border-collapse: collapse; text-align: left; min-width: 280px;">
+                        <thead>
+                           <tr>
+                              <th style="padding: 0.75rem 1rem; border-bottom: 2px solid var(--first-color-light);">Feature</th>
+                              <th style="padding: 0.75rem 1rem; border-bottom: 2px solid var(--first-color-light);">Value</th>
+                           </tr>
+                        </thead>
+                        <tbody>
+                           <tr><td style="padding: 0.5rem 1rem;">Jaw Length</td><td>51 mm</td></tr>
+                           <tr><td style="padding: 0.5rem 1rem;">Jaw Capacity</td><td>10 mm</td></tr>
+                           <tr><td style="padding: 0.5rem 1rem;">Square Size</td><td>6 mm</td></tr>
+                           <tr><td style="padding: 0.5rem 1rem;">Tip Thickness</td><td>1.5 mm</td></tr>
+                           <tr><td style="padding: 0.5rem 1rem;">Grip Thickness</td><td>3 mm</td></tr>
+                           <tr><td style="padding: 0.5rem 1rem;">Tight Tolerance</td><td>0.1 mm</td></tr>
+                           <tr><td style="padding: 0.5rem 1rem;">Looser Tolerance</td><td>0.15 mm</td></tr>
+                        </tbody>
+                        </table>
+
+                        <!-- Print Settings Table -->
+                        <table style="border-collapse: collapse; text-align: left; min-width: 280px;">
+                        <thead>
+                           <tr>
+                              <th style="padding: 0.75rem 1rem; border-bottom: 2px solid var(--first-color-light);">Material</th>
+                              <th style="padding: 0.75rem 1rem; border-bottom: 2px solid var(--first-color-light);">Settings</th>
+                           </tr>
+                        </thead>
+                        <tbody>
+                           <tr>
+                              <td style="padding: 0.5rem 1rem;">PLA</td>
+                              <td>
+                                 200–220°C nozzle<br>
+                                 50–60°C bed<br>
+                                 Cooling ON<br>
+                                 60–100 mm/s
+                              </td>
+                           </tr>
+                           <tr>
+                              <td style="padding: 0.5rem 1rem;">TPU</td>
+                              <td>
+                                 210–230°C nozzle<br>
+                                 30–60°C bed<br>
+                                 Cooling OFF<br>
+                                 20–40 mm/s
+                              </td>
+                           </tr>
+                        </tbody>
+                        </table>
+                     </div>
+
+                     <!-- Button -->
+                     <div style="text-align: center; margin-top: 2rem;">
+                        <a href="https://store.creality.com/blog/creality-3d-printer-filaments-type-parameter" target="_blank" class="button">
+                        📘 View Creality Filament Guide
+                        </a>
+                     </div>
+                  </div>
+               </article>
+
+               <!--==================== CAD MODEL ====================-->
+               <article class="work__card">
+                  <div class="work__link home__data" style="padding-bottom: 2rem;">
+                     <h2 class="work__title">CAD Model</h2>
+                     <iframe src="https://a360.co/4bFuyR6" width="100%" height="500" frameborder="0" allowfullscreen class="work__img"></iframe>
+                  </div>
+               </article>
+
+               <!--==================== CONCLUSION ====================-->
+               <article class="work__card">
+                  <div class="work__link home__data" style="padding-bottom: .75rem;">
+                     <h2 class="work__title">Conclusion</h2>
+                     <p class="work__description">
+                        This project demonstrates how multi-material 3D printing 
+                        can be used to create functional, print-in-place designs. 
+                        By strategically combining rigid and flexible materials, 
+                        these pliers effectively grip small electronic components 
+                        while maintaining durability and usability.
+                     </p>
+                  </div>
+               </article>
+            </div>
+         </section>
+      </main>
+
+      <!--==================== GALLERY ====================-->
+      <script>
+         const galleryImages = [
+            {
+               src: "img/Initial_Prototype.jpg",
+               caption: "<strong>Initial Prototype</strong> — Early tolerance testing"
+            },
+            {
+               src: "img/Design_Iteration.jpg",
+               caption: "<strong>Design Iteration</strong> — Refined geometry and materials"
+            },
+            {
+               src: "img/GIF.gif",
+               caption: "<strong>Final Working Model</strong> — Spring mechanism in action"
+            }
+         ];
+
+         let currentIndex = 0;
+
+         function showImage(index) {
+            const imageEl = document.getElementById("gallery-image");
+            const captionEl = document.getElementById("gallery-caption");
+
+            imageEl.src = galleryImages[index].src;
+            imageEl.alt = galleryImages[index].caption;
+            captionEl.innerHTML = galleryImages[index].caption;
+         }
+
+         function prevImage() {
+            currentIndex = (currentIndex - 1 + galleryImages.length) % galleryImages.length;
+            showImage(currentIndex);
+         }
+
+         function nextImage() {
+            currentIndex = (currentIndex + 1) % galleryImages.length;
+            showImage(currentIndex);
+         }
+
+         // Initialize with first image
+         document.addEventListener("DOMContentLoaded", () => {
+            showImage(currentIndex);
+         });
+      </script>
+
+      <!--==================== FOOTER ====================-->
+      <footer class="footer">
+         <div class="footer__container container grid">
+            <ul class="footer__links">
+               <li><a href="../../index.html#home" class="footer__link">Home</a></li>
+               <li><a href="../../index.html#work" class="footer__link">Work</a></li>
+               <li><a href="../../index.html#info" class="footer__link">Info</a></li>
+            </ul>
+            <span class="footer__copy">&#169; All Rights Reserved By Kevin Tran</span>
+         </div>
+      </footer>
+
+      <!--========== SCROLL UP ==========-->
+      <a href="#" class="scrollup" id="scroll-up">
+         <i class="ri-arrow-up-line"></i>
+      </a>
+
+      <!--========== SCROLL UP SCRIPT ==========-->
+      <script>
+         window.addEventListener("scroll", function () {
+            const scrollUp = document.getElementById("scroll-up");
+            if (scrollUp) {
+               if (window.scrollY >= 350) {
+               scrollUp.classList.add("show-scroll");
+               } else {
+               scrollUp.classList.remove("show-scroll");
+               }
+            }
+         });
+      </script>
+
+      <!--==================== SCRIPTS ====================-->
+      <script src="../../assets/js/main.js"></script>
+   </body>
+</html>

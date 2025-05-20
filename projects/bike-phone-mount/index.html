@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Kevin Tran | Bike Phone Mount Holder</title>
+
+      <!--=============== REMIXICONS ===============-->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css" />
+
+      <!--=============== CSS ===============-->
+      <link rel="stylesheet" href="../../assets/css/styles.css" />
+   </head>
+   <body>
+      <!--==================== HEADER ====================-->
+      <header class="header" id="header">
+         <nav class="nav container">
+            <a href="../../index.html#work" class="nav__logo">
+               <i class="ri-arrow-left-line" style="margin-right: 0.5rem;"></i>Back
+            </a>
+         </nav>
+      </header>
+
+      <!--==================== MAIN ====================-->
+      <main class="main">
+         <!--==================== PROJECT ====================-->
+         <section class="section work">
+            <div class="container grid">
+
+               <!--==================== INTRO ====================-->
+               <article class="work__card">
+                  <div class="work__link home__data" style="padding-bottom: 2rem;">
+                     <h1 class="section__title">Bike Phone Mount Holder</h1>
+                     <h2 class="work__title" style="margin-top: 1.5rem;">Overview</h2>
+                     <p class="work__description">
+                        This project focuses on the design and fabrication of a phone mount holder for a bike or scooter. The holder allows for quick attachment and secure rotation between portrait and landscape orientations without requiring tools. It incorporates a detent mechanism to provide tactile feedback for rotation and ensures the phone remains securely gripped while riding.
+                     </p>
+                     <div style="display: flex; flex-direction: column; align-items: center; gap: 1rem; margin-top: 1rem;">
+                           <a href="https://www.youtube.com/watch?v=QnqAtSeqRPo" target="_blank" class="button">
+                           🛠 Detent Mechanism Inspiration
+                           </a>
+                        </div>
+
+                     <img src="img/Components.png" alt="Teaser" style="margin-top: 2rem;" class="work__img" />
+                  </div>
+               </article>
+
+               <!--==================== VIDEO ====================-->
+               <article class="work__card">
+                  <div class="work__link home__data" style="padding-bottom: 2rem;">
+                     <h2 class="work__title">Video Demonstration</h2>
+                     <iframe width="100%" height="400" src="https://www.youtube.com/embed/_Dmmy5fxc8g" frameborder="0" allowfullscreen class="work__img"></iframe>
+                  </div>
+               </article>
+
+               <!--==================== DESIGN & FUNCTION ====================-->
+               <article class="work__card">
+                  <div class="work__link home__data" style="padding-bottom: .75rem;">
+                     <h2 class="work__title">Design Process & Functionality</h2>
+                     <p class="work__description">
+                        Designed using a top-down approach beginning with the bike mount, this project integrates the phone holder and dual detent mechanisms to enable smooth rotation between portrait and landscape orientations. The mount features a hinge system for easy installation and combines ball bearings and springs to securely snap the phone in place, offering both stability and tactile feedback.
+                     </p>
+                  </div>
+               </article>
+
+               <!--==================== MATERIALS ====================-->
+               <article class="work__card">
+                  <div class="work__link home__data" style="padding-bottom: 2rem;">
+                     <h2 class="work__title">Material Breakdown</h2>
+                     <p class="work__description">
+                        SLS nylon was chosen for structural components like the mount and detent mechanisms, while PLA was used for the phone holder. A rubberized grip enhances adhesion to the bike handlebar and keeps the phone secure.
+                     </p>
+
+                     <!--==================== GALLERY ====================-->
+                     <div class="simple-gallery" style="text-align: center;">
+                        <img id="gallery-image" src="img/Render.png" alt="Initial Prototype" class="gallery-img" />
+                        <p id="gallery-caption" class="gallery-caption">
+                           <strong>Final Design</strong> — Showing rotation and locking mechanism in action
+                        </p>
+
+                        <div class="gallery-controls" style="margin-top: 1rem;">
+                           <button onclick="prevImage()" class="button">← Prev</button>
+                           <button onclick="nextImage()" class="button" style="margin-left: 1rem;">Next →</button>
+                        </div>
+                     </div>
+                  </div>
+               </article>
+
+               <!--==================== MANUFACTURING & ASSEMBLY ====================-->
+               <article class="work__card">
+                  <div class="work__link home__data" style="padding-bottom: .75rem;">
+                     <h2 class="work__title">Manufacturing & Assembly</h2>
+                     <p class="work__description">
+                        Prototyping was done using FFF with the Creality K1C, while the final version was printed using SLS nylon for durability. A tolerance of 0.15 mm was applied to ensure secure but smooth-fitting parts. Assembly includes screws, nuts, ball bearings, and springs—requiring only one screw to lock the mount in place, allowing tool-free rotation.
+                     </p>
+                     <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 2rem; margin-top: 1.5rem;">
+                        <table style="border-collapse: collapse; text-align: left; min-width: 280px;">
+                           <thead>
+                              <tr>
+                                 <th style="padding: 0.75rem 1rem; border-bottom: 2px solid var(--first-color-light);">Material / Component</th>
+                                 <th style="padding: 0.75rem 1rem; border-bottom: 2px solid var(--first-color-light);">Quantity / Parts</th>
+                              </tr>
+                           </thead>
+                           <tbody>
+                              <tr>
+                                 <td style="padding: 0.5rem 1rem;">PLA</td>
+                                 <td style="padding: 0.5rem 1rem;">
+                                    Clamp (top & bottom), Ball joint, Threaded screw nut,<br>
+                                    Bottom & Top detent, Phone holder base, Top covering,<br>
+                                    2 Side phone clamps
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td style="padding: 0.5rem 1rem;">TPU</td>
+                                 <td style="padding: 0.5rem 1rem;">
+                                    2 Handle clamp grips, 2 Phone clamp pieces
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td style="padding: 0.5rem 1rem;">Ball Bearings</td>
+                                 <td style="padding: 0.5rem 1rem;">2</td>
+                              </tr>
+                              <tr>
+                                 <td style="padding: 0.5rem 1rem;">Loaded Springs</td>
+                                 <td style="padding: 0.5rem 1rem;">2</td>
+                              </tr>
+                              <tr>
+                                 <td style="padding: 0.5rem 1rem;">3mm Screws and Nuts</td>
+                                 <td style="padding: 0.5rem 1rem;">Standard assembly</td>
+                              </tr>
+                              <tr>
+                                 <td style="padding: 0.5rem 1rem;">2.5mm Screw and Nut</td>
+                                 <td style="padding: 0.5rem 1rem;">2</td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </div>
+                  </div>
+               </article>
+
+               <!--==================== CAD MODEL ====================-->
+               <article class="work__card">
+                  <div class="work__link home__data">
+                     <h2 class="work__title">CAD Model</h2>
+                     <iframe src="https://a360.co/3XX2wuJ" width="100%" height="500" frameborder="0" allowfullscreen class="work__img"></iframe>
+                  </div>
+               </article>
+
+               <!--==================== CONCLUSION ====================-->
+               <article class="work__card">
+                  <div class="work__link home__data" style="padding-bottom: .75rem;">
+                     <h2 class="work__title">Conclusion</h2>
+                     <p class="work__description">
+                        This project demonstrates the effectiveness of combining modular 3D printing with mechanical design for everyday applications. By leveraging multiple materials, detent mechanisms, and top-down modeling, the bike phone mount offers both ease of use and structural reliability. The final design is compact, intuitive, and secure—capable of withstanding real-world conditions while offering smooth user interaction.
+                     </p>
+                  </div>
+               </article>
+            </div>
+         </section>
+      </main>
+
+      <!--==================== GALLERY ====================-->
+      <script>
+         const galleryImages = [
+            {
+               src: "img/Render.png",
+               caption: "<strong>Final Design</strong> — Showing rotation and locking mechanism in action"
+            },
+            {
+               src: "img/Section Analysis.png",
+               caption: "<strong>Section View</strong> — Internal detent and locking structure"
+            },
+            {
+               src: "img/GIF.gif",
+               caption: "<strong>Animated Demonstration</strong> — Mount rotating between orientations"
+            }
+         ];
+
+         let currentIndex = 0;
+
+         function showImage(index) {
+            const imageEl = document.getElementById("gallery-image");
+            const captionEl = document.getElementById("gallery-caption");
+            imageEl.src = galleryImages[index].src;
+            imageEl.alt = galleryImages[index].caption;
+            captionEl.innerHTML = galleryImages[index].caption;
+         }
+
+         function prevImage() {
+            currentIndex = (currentIndex - 1 + galleryImages.length) % galleryImages.length;
+            showImage(currentIndex);
+         }
+
+         function nextImage() {
+            currentIndex = (currentIndex + 1) % galleryImages.length;
+            showImage(currentIndex);
+         }
+
+         document.addEventListener("DOMContentLoaded", () => {
+            showImage(currentIndex);
+         });
+         </script>
+
+      <!--==================== FOOTER ====================-->
+      <footer class="footer">
+         <div class="footer__container container grid">
+            <ul class="footer__links">
+               <li><a href="../../index.html#home" class="footer__link">Home</a></li>
+               <li><a href="../../index.html#work" class="footer__link">Work</a></li>
+               <li><a href="../../index.html#info" class="footer__link">Info</a></li>
+            </ul>
+            <span class="footer__copy">&#169; All Rights Reserved By Kevin Tran</span>
+         </div>
+      </footer>
+
+      <!--========== SCROLL UP ==========-->
+      <a href="#" class="scrollup" id="scroll-up">
+         <i class="ri-arrow-up-line"></i>
+      </a>
+
+      <!--========== SCROLL UP SCRIPT ==========-->
+      <script>
+         window.addEventListener("scroll", function () {
+            const scrollUp = document.getElementById("scroll-up");
+            if (scrollUp) {
+               if (window.scrollY >= 350) {
+                  scrollUp.classList.add("show-scroll");
+               } else {
+                  scrollUp.classList.remove("show-scroll");
+               }
+            }
+         });
+      </script>
+
+      <!--==================== SCRIPTS ====================-->
+      <script src="../../assets/js/main.js"></script>
+   </body>
+</html>

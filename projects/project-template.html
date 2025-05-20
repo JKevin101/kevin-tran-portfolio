@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Project Title - Kevin Tran</title>
+
+  <!-- Reuse main website styles -->
+  <link rel="stylesheet" href="../../assets/css/styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+</head>
+<body>
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="../../index.html#work" class="nav__logo">← Back to Works</a>
+    </nav>
+  </header>
+
+  <main class="main">
+    <section class="section">
+      <div class="container">
+        <h1 class="section__title">Project Title</h1>
+        <p class="work__description">
+          A short summary of what this project does and why it's cool.
+        </p>
+
+        <img src="images/preview.jpg" alt="Preview" class="work__img" style="margin-top: 1.5rem;" />
+
+        <h2 class="work__title" style="margin-top: 2.5rem;">Gallery</h2>
+        <div class="swiper mySwiper" style="margin-top: 1rem;">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="images/slide1.jpg" alt="Slide 1" />
+            </div>
+            <div class="swiper-slide">
+              <img src="images/slide2.jpg" alt="Slide 2" />
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+        <h2 class="work__title" style="margin-top: 3rem;">Technologies Used</h2>
+        <ul>
+          <li>✔️ HTML</li>
+          <li>✔️ CSS</li>
+          <li>✔️ JavaScript</li>
+        </ul>
+
+        <h2 class="work__title" style="margin-top: 2rem;">Links</h2>
+        <ul>
+          <li><a href="#" class="work__link" target="_blank">🔗 Live Site</a></li>
+          <li><a href="#" class="work__link" target="_blank">📁 GitHub Repo</a></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__container container grid">
+      <ul class="footer__links">
+        <li><a href="../../index.html#home" class="footer__link">Home</a></li>
+        <li><a href="../../index.html#work" class="footer__link">Work</a></li>
+        <li><a href="../../index.html#info" class="footer__link">Info</a></li>
+      </ul>
+      <span class="footer__copy">&#169; All Rights Reserved By Kevin Tran</span>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="../../assets/js/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper(".mySwiper", {
+      loop: true,
+      spaceBetween: 20,
+      slidesPerView: 1,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev"
+      },
+      breakpoints: {
+        768: { slidesPerView: 2 },
+        1024: { slidesPerView: 3 }
+      }
+    });
+  </script>
+</body>
+</html>
