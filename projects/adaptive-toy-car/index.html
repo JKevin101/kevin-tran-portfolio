@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kevin Tran | Accessible Toy Car Modification</title>
+
+    <!--=============== REMIXICONS ===============-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css" />
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="../../assets/css/styles.css" />
+</head>
+
+<body>
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="../../index.html#work" class="nav__logo">
+                <i class="ri-arrow-left-line" style="margin-right: 0.5rem;"></i>Back
+            </a>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section class="section work">
+            <div class="container grid">
+
+                <!--==================== OVERVIEW ====================-->
+                <article class="work__card">
+                    <div class="work__link home__data">
+                        <h1 class="section__title">Accessible Toy Car Modification</h1>
+
+                        <h2 class="work__title" style="margin-top: 1.5rem;">Overview</h2>
+                        <p class="work__description">
+                            This project modifies a standard toy car to improve accessibility for children with
+                            disabilities, particularly those who face challenges with motor control.
+                            It includes a push button for operation, a potentiometer for speed control, and improved
+                            steering grips.
+                        </p>
+
+                        <img src="img/Background.png" alt="Toy Car" class="work__img" style="margin-top: 1rem;" />
+                    </div>
+                </article>
+
+                <!--==================== VIDEO ====================-->
+                <article class="work__card">
+                    <div class="work__link home__data" style="padding-bottom: 2rem;">
+                        <h2 class="work__title">Video Demonstration</h2>
+                        <iframe width="100%" height="400" src="https://www.youtube.com/embed/a-m4LnRQ_Mg"
+                            frameborder="0" allowfullscreen class="work__img"></iframe>
+                    </div>
+                </article>
+
+                <!--==================== FEATURES ====================-->
+                <article class="work__card">
+                    <div class="work__link home__data">
+                        <h2 class="work__title">Purpose and Features</h2>
+                        <p class="work__description" style="margin-bottom: 1rem;">
+                            This modification aims to create an inclusive play experience for children with motor
+                            impairments and learning disabilities by enhancing toy usability and safety.
+                        </p>
+                        <ul class="work__description" style="list-style: disc; padding-left: 1.5rem;">
+                            <li>External push button replaces the gas pedal for easier operation.</li>
+                            <li>Potentiometer-based speed control for parental adjustment.</li>
+                            <li>Modified steering wheel with PVC grips for better handling.</li>
+                            <li>Durable, child-safe modifications while maintaining toy integrity.</li>
+                            <li>Compliance with ASTM F963-17 Toy Safety Standards.</li>
+                        </ul>
+
+                        <!--==================== GALLERY ====================-->
+                        <div class="simple-gallery" style="text-align: center;">
+                            <img id="gallery-image" src="img/Original_Circuit.png" alt="Original Circuit"
+                                class="gallery-img" />
+                            <p id="gallery-caption" class="gallery-caption">
+                                <strong>Original Circuit</strong> — Sketch of the toy car's default wiring
+                            </p>
+                            <div class="gallery-controls" style="margin-top: 1rem;">
+                                <button onclick="prevImage()" class="button">← Prev</button>
+                                <button onclick="nextImage()" class="button" style="margin-left: 1rem;">Next →</button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!--==================== PARTS LIST ====================-->
+                <article class="work__card">
+                    <div class="work__link home__data" style="padding-bottom: 2rem;">
+                        <h2 class="work__title">Parts List</h2>
+
+                        <h3 class="work__title" style="margin-top: 1.5rem;">Off-the-Shelf Components</h3>
+                        <table style="border-collapse: collapse; text-align: left; min-width: 280px;">
+                            <thead>
+                                <tr>
+                                    <th
+                                        style="padding: 0.75rem 1rem; border-bottom: 2px solid var(--first-color-light);">
+                                        Part</th>
+                                    <th
+                                        style="padding: 0.75rem 1rem; border-bottom: 2px solid var(--first-color-light);">
+                                        Quantity</th>
+                                    <th
+                                        style="padding: 0.75rem 1rem; border-bottom: 2px solid var(--first-color-light);">
+                                        Description</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td style="padding: 0.5rem 1rem;">Toy Car</td>
+                                    <td style="padding: 0.5rem 1rem;">1</td>
+                                    <td style="padding: 0.5rem 1rem;">Base vehicle for modification</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 0.5rem 1rem;">External Push Button</td>
+                                    <td style="padding: 0.5rem 1rem;">1</td>
+                                    <td style="padding: 0.5rem 1rem;">Large button for simplified operation</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 0.5rem 1rem;">Potentiometer</td>
+                                    <td style="padding: 0.5rem 1rem;">1</td>
+                                    <td style="padding: 0.5rem 1rem;">Adjusts car speed</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 0.5rem 1rem;">PVC Pipes</td>
+                                    <td style="padding: 0.5rem 1rem;">Various</td>
+                                    <td style="padding: 0.5rem 1rem;">Used for steering wheel grips</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 0.5rem 1rem;">Heat Shrink Tubing</td>
+                                    <td style="padding: 0.5rem 1rem;">Various</td>
+                                    <td style="padding: 0.5rem 1rem;">Insulates exposed wires</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 0.5rem 1rem;">Wire</td>
+                                    <td style="padding: 0.5rem 1rem;">Various</td>
+                                    <td style="padding: 0.5rem 1rem;">Extends electrical connections</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <h3 class="work__title" style="margin-top: 3rem;">Modification Materials</h3>
+                        <table style="border-collapse: collapse; text-align: left; min-width: 280px;">
+                            <thead>
+                                <tr>
+                                    <th
+                                        style="padding: 0.75rem 1rem; border-bottom: 2px solid var(--first-color-light);">
+                                        Part</th>
+                                    <th
+                                        style="padding: 0.75rem 1rem; border-bottom: 2px solid var(--first-color-light);">
+                                        Purpose</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td style="padding: 0.5rem 1rem;">Needle & Thread</td>
+                                    <td style="padding: 0.5rem 1rem;">To resew modified car components</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 0.5rem 1rem;">Soldering Kit</td>
+                                    <td style="padding: 0.5rem 1rem;">To connect external components</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 0.5rem 1rem;">Drill</td>
+                                    <td style="padding: 0.5rem 1rem;">To secure potentiometer placement</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </article>
+
+                <!--==================== CONCLUSION ====================-->
+                <article class="work__card">
+                    <div class="work__link home__data" style="padding-bottom: .75rem;">
+                        <h2 class="work__title">Conclusion</h2>
+                        <p class="work__description">
+                            This project demonstrates how small, affordable modifications can transform a standard toy
+                            into an inclusive play solution for children with disabilities. By simplifying car operation
+                            and allowing parental control over speed, this modification enhances accessibility, promotes
+                            skill development, and ensures a safe, engaging experience.
+                        </p>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <!--==================== GALLERY ====================-->
+    <script>
+        const galleryImages = [
+            {
+                src: "img/Original_Circuit.png",
+                caption: "<strong>Original Circuit</strong> — Sketch of the toy car's default wiring"
+            },
+            {
+                src: "img/Internal_Circuitry.jpg",
+                caption: "<strong>Internal Circuitry</strong> — Photo of inside wiring"
+            },
+            {
+                src: "img/Modified_Circuit.png",
+                caption: "<strong>Modified Circuit</strong> — Sketch of updated design"
+            }
+        ];
+
+        let currentIndex = 0;
+
+        function showImage(index) {
+            const imageEl = document.getElementById("gallery-image");
+            const captionEl = document.getElementById("gallery-caption");
+
+            imageEl.src = galleryImages[index].src;
+            imageEl.alt = galleryImages[index].caption;
+            captionEl.innerHTML = galleryImages[index].caption;
+        }
+
+        function prevImage() {
+            currentIndex = (currentIndex - 1 + galleryImages.length) % galleryImages.length;
+            showImage(currentIndex);
+        }
+
+        function nextImage() {
+            currentIndex = (currentIndex + 1) % galleryImages.length;
+            showImage(currentIndex);
+        }
+
+        document.addEventListener("DOMContentLoaded", () => {
+            showImage(currentIndex);
+        });
+    </script>
+
+    <!--==================== FOOTER ====================-->
+    <footer class="footer">
+        <div class="footer__container container grid">
+            <ul class="footer__links">
+                <li><a href="../../index.html#home" class="footer__link">Home</a></li>
+                <li><a href="../../index.html#work" class="footer__link">Work</a></li>
+                <li><a href="../../index.html#info" class="footer__link">Info</a></li>
+            </ul>
+            <span class="footer__copy">&#169; All Rights Reserved By Kevin Tran</span>
+        </div>
+    </footer>
+
+    <!--========== SCROLL UP ==========-->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="ri-arrow-up-line"></i>
+    </a>
+
+    <!--========== SCROLL UP SCRIPT ==========-->
+    <script>
+        window.addEventListener("scroll", function () {
+            const scrollUp = document.getElementById("scroll-up");
+            if (scrollUp) {
+                if (window.scrollY >= 350) {
+                    scrollUp.classList.add("show-scroll");
+                } else {
+                    scrollUp.classList.remove("show-scroll");
+                }
+            }
+        });
+    </script>
+
+    <!--==================== SCRIPTS ====================-->
+    <script src="../../assets/js/main.js"></script>
+</body>
+
+</html>

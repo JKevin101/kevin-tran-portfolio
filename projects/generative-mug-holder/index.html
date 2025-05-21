@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kevin Tran | Mug Holder Design</title>
+
+    <!--=============== REMIXICONS ===============-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css" />
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="../../assets/css/styles.css" />
+</head>
+
+<body>
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="../../index.html#work" class="nav__logo">
+                <i class="ri-arrow-left-line" style="margin-right: 0.5rem;"></i>Back
+            </a>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section class="section work">
+            <div class="container grid">
+
+                <!--==================== OVERVIEW ====================-->
+                <article class="work__card">
+                    <div class="work__link home__data">
+                        <h1 class="section__title">Mug Holder Design</h1>
+
+                        <h2 class="work__title" style="margin-top: 1.5rem;">Overview</h2>
+                        <p class="work__description">
+                            This project focuses on the design and fabrication of a mug holder intended to be placed on
+                            the side of a desk. The holder helps keep desks uncluttered by utilizing vertical space,
+                            making it ideal for environments where space is limited. The design was created using
+                            generative design in Fusion 360, optimizing the structure based on forces acting when the
+                            mug is placed on the holder.
+                        </p>
+
+                        <img src="img/Teaser.jpg" alt="Mug Holder Render" class="work__img" style="margin-top: 1rem;" />
+                    </div>
+                </article>
+
+                <!--==================== VIDEO ====================-->
+                <article class="work__card">
+                    <div class="work__link home__data" style="padding-bottom: 2rem;">
+                        <h2 class="work__title">Video Demonstration</h2>
+                        <iframe width="100%" height="400" src="https://www.youtube.com/embed/o_VVrviIlS4?feature=share"
+                            frameborder="0" allowfullscreen class="work__img"></iframe>
+                    </div>
+                </article>
+
+                <!--==================== DESIGN INTENT ====================-->
+                <article class="work__card">
+                    <div class="work__link home__data" style="padding-bottom: .75rem;">
+                        <h2 class="work__title">Preserve and Obstacle Geometry</h2>
+                        <p class="work__description">
+                            The preserved regions in the design include the bottom plate, fixed to the desk, the thread
+                            holder bottoms, and the top plate. These areas are critical for ensuring the holder remains
+                            securely attached to the desk and provides a stable base for the cup.
+                        </p>
+                        <p class="work__description">
+                            The main obstacles are the mug and the desk surface. The design must avoid interfering with
+                            the mug and mug handle to ensure there is space to fit the mug inside. Additionally, the
+                            space between the clamp and the top plate must have clearance for the screw and desk
+                            thickness to clamp properly.
+                        </p>
+                    </div>
+                </article>
+
+                <!--==================== LOAD CASE ====================-->
+                <article class="work__card">
+                    <div class="work__link home__data" style="padding-bottom: .75rem;">
+                        <h2 class="work__title">Load Case Application and Structural Constraints</h2>
+                        <p class="work__description">
+                            For the generative design study of the mug holder, several forces were applied to simulate
+                            usage. A 200 N downward force represents the weight of the mug, simulating compression on
+                            the edges of the mug holder. A 0.736 N·mm remote moment was applied to simulate torque or
+                            twist from adjusting the mug, while a 1000 N upward force counteracts the downward force
+                            that is applied between the mug holder and the connection to the clamp.
+                        </p>
+                        <p class="work__description">
+                            An 80 N angled force at 40° simulates diagonal contact, such as an angled push or the mug
+                            pressing against the clamp. A 100 N bearing load represents radial pressure at pivot points,
+                            ensuring the holder can handle rotational forces. Lastly, a 300 N downward force simulates
+                            the vertical pressure stacked weight on the holder connection to the clamp.
+                        </p>
+                        <p class="work__description">
+                            These forces were applied at key areas like mounting points and clamp regions to evaluate
+                            load distribution and stability. Structural constraints were applied at the mounting points
+                            to prevent movement, ensuring the holder remains secure.
+                        </p>
+                    </div>
+                </article>
+
+                <!--==================== CRITIQUE ====================-->
+                <article class="work__card">
+                    <div class="work__link home__data">
+                        <h2 class="work__title">Critique of Generative Design</h2>
+                        <p class="work__description">
+                            Generative design is very useful in creating optimized geometries, particularly in reducing
+                            material use while maintaining structural integrity. However, while this offers incredible
+                            flexibility and optimization, it comes with limitations. For example, generative design may
+                            not always offer the most practical or manufacturable designs. Especially for more
+                            traditional or heavily regulated industries like automotive, this may require further
+                            iterations and modification.
+                        </p>
+                        <p class="work__description">
+                            Generative design also excels in fields where lightweight and efficiency are essential.
+                            Industries like aerospace or medical device manufacturing are areas where it can provide
+                            significant benefits, especially when aiming to reduce material waste while retaining high
+                            mechanical performance.
+                        </p>
+
+                        <!--==================== GALLERY ====================-->
+                        <div class="simple-gallery" style="text-align: center;">
+                            <img id="gallery-image" src="img/Render.png" alt="Render" class="gallery-img" />
+                            <p id="gallery-caption" class="gallery-caption">
+                                <strong>Render</strong> — Final render of the mug holder
+                            </p>
+                            <div class="gallery-controls" style="margin-top: 1rem;">
+                                <button onclick="prevImage()" class="button">← Prev</button>
+                                <button onclick="nextImage()" class="button" style="margin-left: 1rem;">Next →</button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!--==================== TABLE ====================-->
+                <article class="work__card">
+                    <div class="work__link home__data" style="padding-bottom: 2rem;">
+                        <h2 class="work__title">Table of Forces Applied</h2>
+                        <table
+                            style="border-collapse: collapse; text-align: left; min-width: 280px; margin-top: 1.5rem;">
+                            <thead>
+                                <tr>
+                                    <th
+                                        style="padding: 0.75rem 1rem; border-bottom: 2px solid var(--first-color-light);">
+                                        Name of Force</th>
+                                    <th
+                                        style="padding: 0.75rem 1rem; border-bottom: 2px solid var(--first-color-light);">
+                                        Magnitude</th>
+                                    <th
+                                        style="padding: 0.75rem 1rem; border-bottom: 2px solid var(--first-color-light);">
+                                        Location</th>
+                                    <th
+                                        style="padding: 0.75rem 1rem; border-bottom: 2px solid var(--first-color-light);">
+                                        Rationale</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td style="padding: 0.5rem 1rem;">Downward Force</td>
+                                    <td>200 N</td>
+                                    <td>Edges of the mug holder</td>
+                                    <td>Simulates compression from the weight of the mug</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 0.5rem 1rem;">Remote Moment</td>
+                                    <td>0.736 N·mm</td>
+                                    <td>Clamp areas</td>
+                                    <td>Simulates torque from adjusting the mug</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 0.5rem 1rem;">Upward Force</td>
+                                    <td>1000 N</td>
+                                    <td>Connection to clamp</td>
+                                    <td>Counteracts the downward force</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 0.5rem 1rem;">Angled Force</td>
+                                    <td>80 N</td>
+                                    <td>Clamp interface</td>
+                                    <td>Simulates diagonal contact</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 0.5rem 1rem;">Bearing Load</td>
+                                    <td>100 N</td>
+                                    <td>Pivot points</td>
+                                    <td>Ensures the holder handles rotational forces</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 0.5rem 1rem;">Vertical Pressure</td>
+                                    <td>300 N</td>
+                                    <td>Clamp connection</td>
+                                    <td>Simulates vertical pressure from mug weight</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </article>
+
+                <!--==================== CAD MODEL ====================-->
+                <article class="work__card">
+                    <div class="work__link home__data" style="padding-bottom: 2rem;">
+                        <h2 class="work__title">Embedded Fusion 360 Model</h2>
+                        <iframe src="https://a360.co/4d1l7ft" width="100%" height="500" frameborder="0" allowfullscreen
+                            class="work__img"></iframe>
+                    </div>
+                </article>
+
+                <!--==================== CONCLUSION ====================-->
+                <article class="work__card">
+                    <div class="work__link home__data" style="padding-bottom: .75rem;">
+                        <h2 class="work__title">Conclusion</h2>
+                        <p class="work__description">
+                            The Mug Holder Design project demonstrates how generative design can produce efficient and
+                            functional workspace accessories. By analyzing real-world force conditions and applying them
+                            through simulation in Fusion 360, the resulting design is both space-saving and structurally
+                            sound. This holder serves as a practical application of modern CAD tools to improve everyday
+                            usability, particularly in tight or cluttered environments.
+                        </p>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <!--==================== GALLERY SCRIPT ====================-->
+    <script>
+        const galleryImages = [
+            {
+                src: "img/Render.png",
+                caption: "<strong>Render</strong> — Final render of the mug holder"
+            },
+            {
+                src: "img/Design_Examples.png",
+                caption: "<strong>Designs</strong> — Different generative design outcomes"
+            },
+            {
+                src: "img/GIF.gif",
+                caption: "<strong>GIF</strong> — Demonstrates the holder's functionality"
+            }
+        ];
+
+        let currentIndex = 0;
+
+        function showImage(index) {
+            const imageEl = document.getElementById("gallery-image");
+            const captionEl = document.getElementById("gallery-caption");
+
+            imageEl.src = galleryImages[index].src;
+            imageEl.alt = galleryImages[index].caption;
+            captionEl.innerHTML = galleryImages[index].caption;
+        }
+
+        function prevImage() {
+            currentIndex = (currentIndex - 1 + galleryImages.length) % galleryImages.length;
+            showImage(currentIndex);
+        }
+
+        function nextImage() {
+            currentIndex = (currentIndex + 1) % galleryImages.length;
+            showImage(currentIndex);
+        }
+
+        document.addEventListener("DOMContentLoaded", () => {
+            showImage(currentIndex);
+        });
+    </script>
+
+    <!--==================== FOOTER ====================-->
+    <footer class="footer">
+        <div class="footer__container container grid">
+            <ul class="footer__links">
+                <li><a href="../../index.html#home" class="footer__link">Home</a></li>
+                <li><a href="../../index.html#work" class="footer__link">Work</a></li>
+                <li><a href="../../index.html#info" class="footer__link">Info</a></li>
+            </ul>
+            <span class="footer__copy">&#169; All Rights Reserved By Kevin Tran</span>
+        </div>
+    </footer>
+
+    <!--========== SCROLL UP ==========-->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="ri-arrow-up-line"></i>
+    </a>
+
+    <!--========== SCROLL UP SCRIPT ==========-->
+    <script>
+        window.addEventListener("scroll", function () {
+            const scrollUp = document.getElementById("scroll-up");
+            if (scrollUp) {
+                if (window.scrollY >= 350) {
+                    scrollUp.classList.add("show-scroll");
+                } else {
+                    scrollUp.classList.remove("show-scroll");
+                }
+            }
+        });
+    </script>
+
+    <!--==================== SCRIPTS ====================-->
+    <script src="../../assets/js/main.js"></script>
+</body>
+
+</html>
