@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kevin Tran | Pediatric Blood Tube</title>
+    <link rel="stylesheet" href="../../assets/css/styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css" />
+</head>
+
+<body>
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="../../index.html#work" class="nav__logo">
+                <i class="ri-arrow-left-line"></i>Back
+            </a>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section class="section work">
+            <div class="container grid">
+
+                <!-- OVERVIEW -->
+                <article class="work__card">
+                    <div class="work__link home__data" style="padding-bottom: 2rem;">
+                        <h1 class="section__title">Pediatric Blood Tube - EZ Draw</h1>
+
+                        <h2 class="work__title">Overview</h2>
+                        <p class="work__description">
+                            The EZ Draw is a pediatric blood collection tube engineered to match adult tube dimensions
+                            for automation compatibility while ensuring a reduced blood draw volume of just 1 mL. The
+                            conical inner shape and resin-printed material allow for accuracy, affordability, and
+                            seamless integration into existing lab workflows. This project was part of our senior design
+                            capstone.
+                        </p>
+
+                        <iframe src="img/EZ_Draw_Poster.pdf" width="100%" height="700px" style="border: none;"></iframe>
+                    </div>
+                </article>
+
+                <!-- VIDEO -->
+                <article class="work__card">
+                    <div class="work__link home__data" style="padding-bottom: 2rem;">
+                        <h2 class="work__title">Video Demonstration</h2>
+                        <iframe width="100%" height="450" src="https://www.youtube.com/embed/uLt1FSTfHUU"
+                            frameborder="0" allowfullscreen class="work__img"></iframe>
+                    </div>
+                </article>
+
+                <!-- DESCRIPTION & GALLERY -->
+                <article class="work__card">
+                    <div class="work__link home__data">
+                        <h2 class="work__title">Design Process & Testing</h2>
+                        <p class="work__description">
+                            Multiple prototypes were developed using different fabrication methods—initial filament
+                            printing, vacuum forming, and ultimately resin printing for its precision and effectiveness.
+                            All designs preserved adult-tube external geometry while altering internal volumes. The
+                            final medium design reliably drew 1 mL of fluid and integrated with existing vacutainer
+                            caps.
+                        </p>
+
+                        <div class="simple-gallery" style="text-align: center; margin-top: 2rem;">
+                            <img id="gallery-image" src="img/First_Iteration.jpg" alt="Prototype" class="gallery-img" />
+                            <p id="gallery-caption" class="gallery-caption">
+                                <strong>Initial Iteration</strong> – Inner geometry smaller than adult tubes.
+                            </p>
+                            <div class="gallery-controls" style="margin-top: 1rem;">
+                                <button onclick="prevImage()" class="button">← Prev</button>
+                                <button onclick="nextImage()" class="button" style="margin-left: 1rem;">Next →</button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- MANUFACTURING AND INDUSTRY -->
+                <article class="work__card">
+                    <div class="work__link home__data" style="padding-bottom: .75rem;">
+                        <h2 class="work__title">Manufacturing & Industry Impact</h2>
+                        <p class="work__description">
+                            Current pediatric blood tubes often cannot be processed on standard automated lab assembly
+                            lines due to their smaller dimensions. This requires manual aliquoting, slowing down
+                            workflow, increasing labor costs, and increasing the risk of error. EZ Draw solves this
+                            problem by matching adult tube external geometry while drawing only 1 mL—allowing it to
+                            integrate seamlessly with automation systems. This eliminates the need for manual processing
+                            and increases efficiency, reliability, and patient throughput in diagnostic settings.
+                        </p>
+                    </div>
+                </article>
+
+                <!-- DESIGNS AND ITERATIONS -->
+                <article class="work__card">
+                    <div class="work__link home__data" style="padding-bottom: 2rem;">
+                        <h2 class="work__title">Designs & Iterations</h2>
+                        <p class="work__description">
+                            The development of EZ Draw involved several stages of material and process experimentation:
+                        </p>
+                        <ul class="work__description">
+                            <li><b>PLA:</b> Used for early prototypes to explore internal geometry and wall thickness,
+                                but not airtight.</li>
+                            <li><b>Nylon:</b> Maintained shape well but was porous and failed to hold fluids reliably.
+                            </li>
+                            <li><b>PET:</b> Attempted due to its medical relevance, but 3D prints had weak layer lines
+                                and poor sealing.</li>
+                            <li><b>Vacuum Forming:</b> Worked for external shapes, but internal geometry lacked
+                                structural integrity.</li>
+                            <li><b>Resin Printing:</b> Provided airtight seals, detailed internal features, and
+                                structural strength—selected for final design.</li>
+                        </ul>
+                        <img src="img/Prototypes.jpg" alt="Design Iterations" class="work__img"
+                            style="margin-top: 1.5rem;" />
+                    </div>
+                </article>
+
+                <!-- PROTOTYPE MOLDS -->
+                <article class="work__card">
+                    <div class="work__link home__data" style="padding-bottom: 2rem;">
+                        <h2 class="work__title">Prototype Molds</h2>
+                        <p class="work__description">
+                            To support our testing and scaling goals, we created several prototype molds to experiment
+                            with different manufacturing approaches:
+                        </p>
+                        <ul class="work__description">
+                            <li><b>PLA Vacuum Mold:</b> A basic mold used to visualize tube geometry and evaluate vacuum
+                                forming viability.</li>
+                            <li><b>Resin Mold:</b> Used during vacuum forming trials, offering more detail and better
+                                surface finish for shape control.</li>
+                            <li><b>PLA Injection Mold:</b> Simulated an injection molding setup, giving insights into
+                                future scalable production methods.</li>
+                        </ul>
+                        <img src="img/Prototype_Molds.jpg" alt="Prototype Molds" class="work__img"
+                            style="margin-top: 1.5rem;" />
+                    </div>
+                </article>
+
+                <!-- PARTS -->
+                <article class="work__card">
+                    <div class="work__link home__data" style="padding-bottom: .75rem;">
+                        <h2 class="work__title">Key Features</h2>
+                        <ul class="work__description">
+                            <li><b>Draw Volume:</b> Precisely 1 mL</li>
+                            <li><b>Material:</b> Resin (not medical-grade PET)</li>
+                            <li><b>Compatibility:</b> Works with standard automation and adult vacutainer caps</li>
+                            <li><b>Applications:</b> Pediatric blood diagnostics, low-volume clinical workflows</li>
+                            <li><b>Advantages:</b> Reduced patient discomfort, minimized aliquoting, increased workflow
+                                efficiency</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <!-- LINEAR ACTUATOR SECTION -->
+                <article class="work__card">
+                    <div class="work__link home__data" style="padding-bottom: 2rem;">
+                        <h2 class="work__title">Linear Actuator System</h2>
+                        <p class="work__description">
+                            To simulate a clinical vacuum seal process and eliminate manual pressurization, a linear
+                            actuator was integrated into our test setup. The actuator was placed inside a sealed vacuum
+                            container and programmed to remotely press the cap onto the EZ Draw tube. This allowed
+                            consistent and repeatable vacuum application without breaking the container's seal,
+                            emulating how the tubes would be capped in an automated lab setting.
+                        </p>
+                        <p class="work__description">
+                            The actuator mechanism included a custom 3D-printed mount and plunger system to apply
+                            vertical force. Control was achieved through an external interface, keeping the internal
+                            environment sealed and stable during repeated trials.
+                        </p>
+                        <h3 class="work__title" style="margin-top: 2rem;">Video Demonstration</h3>
+                        <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;margin-top: 1rem;">
+                            <iframe src="https://www.youtube.com/embed/90qq8ZxlcA8" frameborder="0" allowfullscreen
+                                style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- CAD MODEL -->
+                <article class="work__card">
+                    <div class="work__link home__data" style="padding-bottom: 2rem;">
+                        <h2 class="work__title">CAD Model</h2>
+                        <iframe src="https://a360.co/4dy0GHt" width="100%" height="500" frameborder="0" allowfullscreen
+                            class="work__img"></iframe>
+                    </div>
+                </article>
+
+                <!-- CONCLUSION -->
+                <article class="work__card">
+                    <div class="work__link home__data" style="padding-bottom: .75rem;">
+                        <h2 class="work__title">Conclusion</h2>
+                        <p class="work__description">
+                            EZ Draw represents a significant advancement in pediatric blood collection. Our work focused
+                            on reducing invasiveness while ensuring lab compatibility, all within limited resources.
+                            While the final prototype used resin, future iterations will explore regulatory-grade PET or
+                            similar materials to bring EZ Draw closer to clinical deployment.
+                        </p>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <!-- GALLERY SCRIPT -->
+    <script>
+        const galleryImages = [
+            {
+                src: "img/First_Iteration.jpg",
+                caption: "<strong>Initial Iteration</strong> – Inner geometry smaller than pediatric tubes."
+            },
+            {
+                src: "img/Second_Iteration.jpg",
+                caption: "<strong>Second Iteration</strong> – Matched pediatric geometry for comparative tests."
+            },
+            {
+                src: "img/Final_Design.jpg",
+                caption: "<strong>Final Design</strong> – Resin-printed, 1 mL draw volume confirmed."
+            }
+        ];
+
+        let currentIndex = 0;
+
+        function showImage(index) {
+            const imageEl = document.getElementById("gallery-image");
+            const captionEl = document.getElementById("gallery-caption");
+            imageEl.src = galleryImages[index].src;
+            imageEl.alt = galleryImages[index].caption;
+            captionEl.innerHTML = galleryImages[index].caption;
+        }
+
+        function prevImage() {
+            currentIndex = (currentIndex - 1 + galleryImages.length) % galleryImages.length;
+            showImage(currentIndex);
+        }
+
+        function nextImage() {
+            currentIndex = (currentIndex + 1) % galleryImages.length;
+            showImage(currentIndex);
+        }
+
+        document.addEventListener("DOMContentLoaded", () => showImage(currentIndex));
+    </script>
+
+    <!--==================== FOOTER ====================-->
+    <footer class="footer">
+        <div class="footer__container container grid">
+            <ul class="footer__links">
+                <li><a href="../../index.html#home" class="footer__link">Home</a></li>
+                <li><a href="../../index.html#work" class="footer__link">Work</a></li>
+                <li><a href="../../index.html#info" class="footer__link">Info</a></li>
+            </ul>
+            <span class="footer__copy">&#169; All Rights Reserved By Kevin Tran</span>
+        </div>
+    </footer>
+
+    <!--========== SCROLL UP ==========-->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="ri-arrow-up-line"></i>
+    </a>
+
+    <!--========== SCROLL UP SCRIPT ==========-->
+    <script>
+        window.addEventListener("scroll", function () {
+            const scrollUp = document.getElementById("scroll-up");
+            if (scrollUp) {
+                if (window.scrollY >= 350) {
+                    scrollUp.classList.add("show-scroll");
+                } else {
+                    scrollUp.classList.remove("show-scroll");
+                }
+            }
+        });
+    </script>
+
+    <!--==================== SCRIPTS ====================-->
+    <script src="../../assets/js/main.js"></script>
+</body>
+
+</html>

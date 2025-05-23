@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kevin Tran | Custom 3D Printed Phone Case</title>
+
+    <!--=============== REMIXICONS ===============-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css" />
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="../../assets/css/styles.css" />
+</head>
+
+<body>
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="../../index.html#work" class="nav__logo">
+                <i class="ri-arrow-left-line" style="margin-right: 0.5rem;"></i>Back
+            </a>
+        </nav>
+    </header>
+
+    <!--==================== MAIN ====================-->
+    <main class="main">
+        <section class="section work">
+            <div class="container grid">
+
+                <!--==================== OVERVIEW ====================-->
+                <article class="work__card">
+                    <div class="work__link home__data" style="padding-bottom: 2rem;">
+                        <h1 class="section__title">Custom 3D Printed Phone Case</h1>
+
+                        <h2 class="work__title" style="margin-top: 1.5rem;">Overview</h2>
+                        <p class="work__description">
+                            This project showcases a 3D-printed phone case for the iPhone 16 Pro Max, designed for
+                            optimal protection and usability. By leveraging TPU material and parametric modeling, the
+                            case ensures a snug fit, button accessibility, and customizable aesthetics.
+                        </p>
+
+                        <img src="img/Teaser.jpg" alt="Phone Case Teaser" class="work__img" style="margin-top: 1rem;" />
+                    </div>
+                </article>
+
+                <!--==================== DESIGN FEATURES ====================-->
+                <article class="work__card">
+                    <div class="work__link home__data" style="padding-bottom: .75rem;">
+                        <h2 class="work__title">Design Features</h2>
+                        <ul class="work__description">
+                            <li><b>TPU Construction:</b> Flexible and impact-resistant for daily use.</li>
+                            <li><b>Button Flaps:</b> Thin responsive layers for effortless pressing.</li>
+                            <li><b>Raised Lip:</b> Protects screen when face-down.</li>
+                            <li><b>Detachable Camera Cover:</b> Allows easy flat-bed printing and lens protection.</li>
+                            <li><b>SVG Personalization Slot:</b> Add your own design elements.</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <!--==================== ITERATION & PROTOTYPING ====================-->
+                <article class="work__card">
+                    <div class="work__link home__data">
+                        <h2 class="work__title">Design & Iterative Process</h2>
+
+                        <p class="work__description">
+                            The design evolved through several iterations to improve fit, usability, and customization:
+                        </p>
+
+                        <ul class="work__description">
+                            <li><b>Initial Prototype:</b> Based on Apple schematics; fit was too tight.</li>
+                            <li><b>Refined Model:</b> Improved tolerances, better button alignment, and thinner walls.
+                            </li>
+                            <li><b>Enhanced Button Accessibility:</b> Optimized button flap design and refined
+                                personalization slot.</li>
+                            <li><b>Final Version:</b> Integrated all feedback into a polished, functional case.</li>
+                        </ul>
+
+                        <!--==================== GALLERY ====================-->
+                        <div class="simple-gallery" style="text-align: center; margin-top: 2rem;">
+                            <img id="gallery-image" src="img/First_Iteration.jpg" alt="Gallery image"
+                                class="gallery-img" />
+                            <p id="gallery-caption" class="gallery-caption"><strong>Initial Prototype</strong> — Based
+                                on Apple schematics</p>
+
+                            <div class="gallery-controls" style="margin-top: 1rem;">
+                                <button onclick="prevImage()" class="button">← Prev</button>
+                                <button onclick="nextImage()" class="button" style="margin-left: 1rem;">Next →</button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!--==================== MATERIAL & SETTINGS ====================-->
+                <article class="work__card">
+                    <div class="work__link home__data" style="padding-bottom: 2rem;">
+                        <h2 class="work__title">Material & Printing Settings</h2>
+
+                        <div
+                            style="display: flex; flex-wrap: wrap; justify-content: center; gap: 2rem; margin-top: 1.5rem;">
+                            <!-- Print Material Settings Table -->
+                            <table style="border-collapse: collapse; text-align: left; min-width: 280px;">
+                                <thead>
+                                    <tr>
+                                        <th
+                                            style="padding: 0.75rem 1rem; border-bottom: 2px solid var(--first-color-light);">
+                                            Material</th>
+                                        <th
+                                            style="padding: 0.75rem 1rem; border-bottom: 2px solid var(--first-color-light);">
+                                            Settings</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td style="padding: 0.5rem 1rem;">TPU</td>
+                                        <td>
+                                            210–240°C nozzle<br>
+                                            30–60°C bed<br>
+                                            Print Speed: 20–30 mm/s<br>
+                                            Supports: Tree
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <!-- Printer Info Table -->
+                            <table style="border-collapse: collapse; text-align: left; min-width: 280px;">
+                                <thead>
+                                    <tr>
+                                        <th
+                                            style="padding: 0.75rem 1rem; border-bottom: 2px solid var(--first-color-light);">
+                                            Printer</th>
+                                        <th
+                                            style="padding: 0.75rem 1rem; border-bottom: 2px solid var(--first-color-light);">
+                                            Model</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td style="padding: 0.5rem 1rem;">Creality</td>
+                                        <td>K1C</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </article>
+
+                <!--==================== CAD MODEL ====================-->
+                <article class="work__card">
+                    <div class="work__link home__data" style="padding-bottom: 2rem;">
+                        <h2 class="work__title">CAD Model</h2>
+                        <iframe src="https://a360.co/4iHNhhj" width="100%" height="500" frameborder="0" allowfullscreen
+                            class="work__img"></iframe>
+                    </div>
+                </article>
+
+                <!--==================== CONCLUSION ====================-->
+                <article class="work__card">
+                    <div class="work__link home__data" style="padding-bottom: .75rem;">
+                        <h2 class="work__title">Conclusion</h2>
+                        <p class="work__description">
+                            This custom phone case demonstrates how 3D printing can provide a cost-effective,
+                            personalized alternative to mass-produced cases. By utilizing TPU and parametric modeling,
+                            the final product achieves an ideal balance between durability, flexibility, and
+                            customization.
+                        </p>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <!--==================== GALLERY SCRIPT ====================-->
+    <script>
+        const galleryImages = [
+            {
+                src: "img/First_Iteration.jpg",
+                caption: "<strong>Initial Prototype</strong> — Based on Apple schematics"
+            },
+            {
+                src: "img/Second_Iteration.jpg",
+                caption: "<strong>Refined Model</strong> — Improved tolerances and fit"
+            },
+            {
+                src: "img/Third_Iteration.jpg",
+                caption: "<strong>Enhanced Button Accessibility</strong> — Flap redesign for better feedback"
+            },
+            {
+                src: "img/Fourth_Iteration.jpg",
+                caption: "<strong>Final Design</strong> — Optimized and complete"
+            }
+        ];
+
+        let currentIndex = 0;
+
+        function showImage(index) {
+            const imageEl = document.getElementById("gallery-image");
+            const captionEl = document.getElementById("gallery-caption");
+
+            imageEl.src = galleryImages[index].src;
+            imageEl.alt = galleryImages[index].caption;
+            captionEl.innerHTML = galleryImages[index].caption;
+        }
+
+        function prevImage() {
+            currentIndex = (currentIndex - 1 + galleryImages.length) % galleryImages.length;
+            showImage(currentIndex);
+        }
+
+        function nextImage() {
+            currentIndex = (currentIndex + 1) % galleryImages.length;
+            showImage(currentIndex);
+        }
+
+        document.addEventListener("DOMContentLoaded", () => {
+            showImage(currentIndex);
+        });
+    </script>
+
+    <!--==================== FOOTER ====================-->
+    <footer class="footer">
+        <div class="footer__container container grid">
+            <ul class="footer__links">
+                <li><a href="../../index.html#home" class="footer__link">Home</a></li>
+                <li><a href="../../index.html#work" class="footer__link">Work</a></li>
+                <li><a href="../../index.html#info" class="footer__link">Info</a></li>
+            </ul>
+            <span class="footer__copy">&#169; All Rights Reserved By Kevin Tran</span>
+        </div>
+    </footer>
+
+    <!--========== SCROLL UP ==========-->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="ri-arrow-up-line"></i>
+    </a>
+
+    <!--==================== SCROLL UP SCRIPT ====================-->
+    <script>
+        window.addEventListener("scroll", function () {
+            const scrollUp = document.getElementById("scroll-up");
+            if (scrollUp) {
+                if (window.scrollY >= 350) {
+                    scrollUp.classList.add("show-scroll");
+                } else {
+                    scrollUp.classList.remove("show-scroll");
+                }
+            }
+        });
+    </script>
+
+    <!--==================== MAIN JS ====================-->
+    <script src="../../assets/js/main.js"></script>
+</body>
+
+</html>
