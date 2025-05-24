@@ -24,7 +24,7 @@
 
                 <!-- OVERVIEW -->
                 <article class="work__card">
-                    <div class="work__link home__data">
+                    <div class="work__link home__data" style="padding-bottom: 2rem;">
                         <h1 class="section__title">Bionic Hand using MediaPipe</h1>
                         <h2 class="work__title" style="margin-top: 1.5rem;">Overview</h2>
                         <p class="work__description">
@@ -33,7 +33,7 @@
                             intuitive
                             gesture-based control without the need for wearable sensors.
                         </p>
-                        <img src="img/bionic_hand_overview.jpg" alt="Bionic Hand Overview" class="work__img"
+                        <img src="img/Teaser.png" alt="Bionic Hand Overview" class="work__img"
                             style="margin-top: 2rem;" />
                     </div>
                 </article>
@@ -61,7 +61,7 @@
 
                         <!-- GALLERY -->
                         <div class="simple-gallery" style="text-align: center;">
-                            <img id="gallery-image" src="img/prototype1.jpg" alt="Initial Prototype"
+                            <img id="gallery-image" src="img/First_Iteration.PNG" alt="Initial Prototype"
                                 class="gallery-img" />
                             <p id="gallery-caption" class="gallery-caption">
                                 <strong>Initial Prototype</strong> — First test with hand tracking and finger actuation.
@@ -77,14 +77,14 @@
 
                 <!-- PARTS -->
                 <article class="work__card">
-                    <div class="work__link home__data">
+                    <div class="work__link home__data" style="padding-bottom: .75rem;">
                         <h2 class="work__title">Components List</h2>
                         <ul class="work__description">
                             <li><b>MediaPipe:</b> For hand gesture recognition</li>
                             <li><b>Arduino Uno:</b> Microcontroller for servo control</li>
                             <li><b>Servo Motors (x5):</b> For each finger</li>
                             <li><b>3D Printed Hand Frame:</b> Rigid PLA construction</li>
-                            <li><b>Power Supply:</b> 5V battery or USB power</li>
+                            <li><b>Power Supply:</b> Four 1.5V batteries connected in series</li>
                             <li><b>Python & OpenCV:</b> Camera capture and data processing</li>
                         </ul>
                     </div>
@@ -92,26 +92,56 @@
 
                 <!-- CAD MODEL -->
                 <article class="work__card">
-                    <div class="work__link home__data">
+                    <div class="work__link home__data" style="padding-bottom: 2rem;">
                         <h2 class="work__title">CAD Model</h2>
-                        <iframe src="https://a360.co/YOUR_FUSION_360_LINK" width="100%" height="500" frameborder="0"
-                            allowfullscreen class="work__img"></iframe>
+                        <iframe src="https://a360.co/45m0wk7" width="100%" height="500" frameborder="0" allowfullscreen
+                            class="work__img"></iframe>
+                    </div>
+                </article>
+
+                <!-- RESULTS -->
+                <article class="work__card">
+                    <div class="work__link home__data" style="padding-bottom: 2rem;">
+                        <h2 class="work__title">Results</h2>
+                        <p class="work__description">
+                            The system achieved over 90% gesture tracking accuracy under controlled lighting, with an
+                            average latency under 0.2 seconds. Servo motion was smooth and responsive, and the power
+                            system prevented brownouts. Minor gesture jitter occurred during rapid hand motion but
+                            overall performance met expectations for a low-cost, real-time bionic interface.
+                        </p>
+                        <div style="margin-top: 1.5rem; text-align: center;">
+                            <a href="files/[Kevin_Tran]_ECE4354_S2025_Final_Project.pdf" class="button" download>📄
+                                Download Final Report</a>
+                        </div>
                     </div>
                 </article>
 
                 <!-- CODE BUTTON -->
                 <article class="work__card">
-                    <div class="work__link home__data" style="text-align: center;">
+                    <div class="work__link home__data" style="text-align: center; padding-bottom: .75rem;">
                         <h2 class="work__title">Source Code</h2>
-                        <a href="files/arduino_code.ino" class="button" download>⬇️ Download Arduino Code</a>
-                        <a href="files/hand_tracking.py" class="button" download style="margin-left: 1rem;">⬇️ Download
-                            Python Code</a>
+                        <div
+                            style="display: flex; flex-direction: column; align-items: center; gap: 1rem; margin-top: 1rem;">
+                        </div>
+                        <a href="files/Syringe_Pump.ino" download="" target="_blank" class="button about__button">⬇️
+                            Download Arduino Code</a>
+                        <div
+                            style="display: flex; flex-direction: column; align-items: center; gap: 1rem; margin-top: 1rem;">
+                        </div>
+                        <a href="files/Final_Project_Code.py" download="" target="_blank"
+                            class="button about__button">⬇️ Download Python Code</a>
+
+                        <p class="work__description" style="margin-top: 4rem;">
+                            <b>Python Dependencies:</b><br>
+                            Make sure to install the following packages before running:<br>
+                            <code>opencv-python</code>, <code>mediapipe</code>, <code>pyserial</code>
+                        </p>
                     </div>
                 </article>
 
                 <!-- CONCLUSION -->
                 <article class="work__card">
-                    <div class="work__link home__data">
+                    <div class="work__link home__data" style="padding-bottom: .75rem;">
                         <h2 class="work__title">Conclusion</h2>
                         <p class="work__description">
                             This bionic hand project bridges the gap between human intent and robotic action using
@@ -131,15 +161,15 @@
     <script>
         const galleryImages = [
             {
-                src: "img/prototype1.jpg",
+                src: "img/First_Iteration.PNG",
                 caption: "<strong>Initial Prototype</strong> — First test with hand tracking and finger actuation."
             },
             {
-                src: "img/prototype2.jpg",
-                caption: "<strong>Second Iteration</strong> — Improved servo mounting."
+                src: "img/Second_Iteration.jpg",
+                caption: "<strong>Circuit</strong> — Fully connected circuit."
             },
             {
-                src: "img/final.jpg",
+                src: "img/Final.jpg",
                 caption: "<strong>Final Model</strong> — Fully responsive bionic hand."
             }
         ];
